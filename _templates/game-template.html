@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+  NEW GAME PAGE TEMPLATE
+  1. Copy this file to  /games/<slug>.html   (e.g. games/word-blast.html)
+  2. Replace every {{PLACEHOLDER}} below.
+  3. Put the icon (512x512) and feature image (1024x500) in /assets/img/
+     as <slug>-icon.png and <slug>-feature.png
+  4. Copy _templates/privacy-template.html to /privacy/<slug>.html and fill it in.
+  5. Add a card for it on index.html (see the "GAME CARD" comment there).
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{GAME_NAME}} — AM GAMING</title>
+<meta name="description" content="{{SHORT_DESCRIPTION}}" />
+<link rel="icon" type="image/png" href="/assets/img/{{SLUG}}-icon.png" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+<meta property="og:title" content="{{GAME_NAME}}" />
+<meta property="og:image" content="/assets/img/{{SLUG}}-feature.png" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="logo">🎮</span><span class="long">AM GAMING</span></a>
+    <nav>
+      <a href="/#games">Games</a>
+      <a href="/privacy/{{SLUG}}">Privacy</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:30px">
+  <div class="wrap">
+    <div class="game-hero">
+      <img class="big-icon" src="/assets/img/{{SLUG}}-icon.png" alt="{{GAME_NAME}} icon" />
+      <div>
+        <p class="eyebrow">{{CATEGORY}}</p>
+        <h1>{{GAME_NAME}}</h1>
+        <p class="sub">{{SHORT_DESCRIPTION}}</p>
+        <div class="cta" style="margin-top:20px">
+          <a class="btn btn-play" href="https://play.google.com/store/apps/details?id={{PACKAGE_ID}}" target="_blank" rel="noopener">
+            <svg width="20" height="22" viewBox="0 0 40 44" aria-hidden="true">
+              <path d="M2 2 L30 22 L2 42 Z" fill="#00d0ff"/>
+              <path d="M2 2 L21 13 L2 24 Z" fill="#00e676" opacity=".9"/>
+              <path d="M2 20 L21 31 L2 42 Z" fill="#ff3d00" opacity=".9"/>
+              <path d="M21 13 L30 22 L21 31 L38 22 Z" fill="#ffd600"/>
+            </svg>
+            Get it on Google Play
+          </a>
+        </div>
+      </div>
+    </div>
+    <img class="feature-img" src="/assets/img/{{SLUG}}-feature.png" alt="{{GAME_NAME}}" />
+  </div>
+</section>
+
+<section style="padding-top:10px">
+  <div class="wrap">
+    <div class="section-head"><h2>About the game</h2></div>
+    <p style="color:var(--muted); max-width:760px">{{LONG_DESCRIPTION}}</p>
+    <div class="features">
+      <div class="feature"><div class="emoji">⭐</div><h4>{{FEATURE_1_TITLE}}</h4><p>{{FEATURE_1_TEXT}}</p></div>
+      <div class="feature"><div class="emoji">⭐</div><h4>{{FEATURE_2_TITLE}}</h4><p>{{FEATURE_2_TEXT}}</p></div>
+      <div class="feature"><div class="emoji">⭐</div><h4>{{FEATURE_3_TITLE}}</h4><p>{{FEATURE_3_TEXT}}</p></div>
+      <div class="feature"><div class="emoji">⭐</div><h4>{{FEATURE_4_TITLE}}</h4><p>{{FEATURE_4_TEXT}}</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>© <span id="yr"></span> AM GAMING. All rights reserved.</div>
+    <div class="links">
+      <a href="/#games">Games</a>
+      <a href="/contact">Support</a>
+      <a href="/data-deletion">Data deletion</a>
+      <a href="/privacy/{{SLUG}}">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+  PRIVACY POLICY TEMPLATE  (Google Play requires a privacy policy URL per app)
+  1. Copy to /privacy/<slug>.html
+  2. Replace {{GAME_NAME}} and the {{DATE}}.
+  3. IMPORTANT: edit the "Information we collect" list to match what THIS game
+     actually does. The list below assumes Firebase + AdMob + Google Play Billing +
+     Google Sign-in (same stack as Math Puzzle IQ). Remove any that don't apply.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — {{GAME_NAME}}</title>
+<link rel="icon" type="image/png" href="/assets/img/{{SLUG}}-icon.png" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="logo">🎮</span><span class="long">AM GAMING</span></a>
+    <nav><a href="/#games">Games</a><a href="/contact">Contact</a></nav>
+  </div>
+</header>
+
+<section style="padding-top:48px">
+  <div class="wrap prose">
+    <h1>Privacy Policy</h1>
+    <p class="updated">For <strong>{{GAME_NAME}}</strong> · Last updated: {{DATE}}</p>
+
+    <p>This Privacy Policy explains how <strong>AM GAMING</strong> handles information in
+      connection with the <strong>{{GAME_NAME}}</strong> mobile application (the "App").</p>
+
+    <h2>Information we collect</h2>
+    <ul>
+      <li><strong>Account information (optional)</strong> — if you sign in with Google (name, email,
+        profile photo, account ID) via Firebase Authentication, used to save your progress.</li>
+      <li><strong>Game progress</strong> — stored on device and, if signed in, backed up to Cloud Firestore.</li>
+      <li><strong>Usage &amp; device data</strong> — via Google Analytics for Firebase.</li>
+      <li><strong>Advertising identifiers</strong> — via Google AdMob to show and measure ads.</li>
+      <li><strong>Purchases</strong> — processed by Google Play Billing; we never receive full payment details.</li>
+    </ul>
+
+    <h2>Third-party services</h2>
+    <ul>
+      <li>Google Play services &amp; Firebase — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+      <li>Google AdMob — <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob &amp; privacy</a></li>
+    </ul>
+
+    <h2>Children's privacy</h2>
+    <p>The App is not directed to children under 13, and we do not knowingly collect their data.</p>
+
+    <h2>Your choices</h2>
+    <p>Play without signing in to keep progress on-device only. To delete cloud data tied to your account,
+      email us. Uninstalling removes local data.</p>
+
+    <h2>Contact us</h2>
+    <p>Email <a href="mailto:sarkermit.play@gmail.com">sarkermit.play@gmail.com</a>.</p>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>© <span id="yr"></span> AM GAMING. All rights reserved.</div>
+    <div class="links"><a href="/#games">Games</a><a href="/contact">Support</a>
+      <a href="/data-deletion">Data deletion</a></div>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
