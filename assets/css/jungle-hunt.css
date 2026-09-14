@@ -26,7 +26,8 @@
 .jungle-note { color: var(--muted); margin-top: 24px; max-width: 840px; }
 .jungle-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
 .jungle-gallery figure { background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
-.jungle-gallery img { width: 100%; height: auto; aspect-ratio: 16 / 9; }
+.jungle-gallery img { width: 100%; height: auto; }
+.jungle-gallery .jungle-wide { grid-column: 1 / -1; }
 .jungle-gallery a { display: block; }
 .jungle-gallery figcaption { padding: 13px 16px; color: var(--muted); font-size: 14px; }
 .jungle-steps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 46px; padding-left: 24px; }
@@ -45,6 +46,23 @@
 .jungle-support h2 { font-size: clamp(24px, 4vw, 32px); margin: 8px 0; }
 .jungle-support .callout > p:not(.eyebrow) { color: var(--muted); }
 .jungle-support .btn-row { margin-top: 22px; }
+.jungle-jump-links { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 18px; color: var(--gold); }
+.jungle-jump-links a { padding-block: 8px; }
+.jungle-note a { text-decoration: underline; text-underline-offset: 3px; color: var(--brand); }
+.jungle-worlds { margin-top: 28px; padding: 18px 22px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; }
+.jungle-worlds summary { cursor: pointer; font-weight: 700; }
+.jungle-worlds ol { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px 32px; margin: 24px 0 4px; padding-left: 24px; }
+.jungle-worlds li::marker { color: var(--gold); }
+.jungle-worlds li span { display: block; font-size: 14px; color: var(--muted); }
+.jungle-table-wrap { margin-top: 24px; overflow-x: auto; }
+.jungle-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.jungle-table caption { text-align: left; font-weight: 700; color: var(--gold); margin-bottom: 12px; }
+.jungle-table th, .jungle-table td { padding: 13px 12px; text-align: center; border-bottom: 1px solid var(--line); }
+.jungle-table th:first-child { text-align: left; }
+.jungle-table thead { background: var(--card); }
+.jungle-table td { color: var(--muted); }
+@media (max-width: 720px) { .jungle-worlds ol { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 540px) { .jungle-worlds ol { grid-template-columns: 1fr; } .jungle-table { font-size: 12px; } .jungle-table th, .jungle-table td { padding: 10px 5px; } }
 @media (max-width: 720px) { .jungle-details-grid { grid-template-columns: 1fr; gap: 36px; } .jungle-gallery { gap: 18px; } }
 @media (max-width: 540px) { .jungle-page .hero { padding-top: 36px; } .jungle-page .game-hero { grid-template-columns: 1fr; gap: 20px; } .jungle-page .game-hero .big-icon { width: 104px; height: 104px; } .jungle-stats { grid-template-columns: repeat(2, 1fr); gap: 20px; } .jungle-arrows, .jungle-gallery, .jungle-steps { grid-template-columns: 1fr; } .jungle-facts div { grid-template-columns: 96px 1fr; } .jungle-page .callout { padding: 20px; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .jungle-page .btn { transition: none; } .jungle-page .btn:hover { transform: none; } }
