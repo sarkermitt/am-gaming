@@ -136,3 +136,9 @@ footer.foot .wrap { display: flex; justify-content: space-between; gap: 16px; fl
 footer.foot a { color: var(--muted); }
 footer.foot a:hover { color: var(--text); }
 footer.foot .links { display: flex; gap: 20px; flex-wrap: wrap; }
+
+/* Legal page reading and anchors */
+.prose ol { padding-left: 24px; }
+.prose [id] { scroll-margin-top: 90px; }
+.prose a { overflow-wrap: anywhere; }
+.prose .callout h2 { margin-top: 0; }

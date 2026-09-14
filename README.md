@@ -11,8 +11,10 @@ policy per game). No build step, no backend — just HTML/CSS. Perfect for Verce
   Android requirements, settings, FAQ and studio support.
 - `/privacy/jungle-hunt` — local saves, Google/Firebase account and cloud data,
   Analytics, Crashlytics, AdMob, support correspondence and Unity diagnostics.
-- `/data-deletion#jungle-hunt` — cloud-account deletion through the top-right
-  Camp user icon, local data clearing and email requests when the app is inaccessible.
+- `/jungle-hunt-data-deletion` — dedicated account/data deletion instructions,
+  with a working email request link, the top-right Camp user icon route, local
+  storage clearing and an explanation of data that remains. The existing
+  `/data-deletion#jungle-hunt` route carries the same Jungle Hunt content.
 - The homepage and Contact page link to Jungle Hunt alongside Math Puzzle IQ.
 
 Jungle Hunt uses the existing **AM-Games** identity and
@@ -32,14 +34,15 @@ loading UI renders come from `Artifacts/Branding/Launch-Implementation` (1672×9
 All seven gallery images load lazily. No generated fake gameplay or external
 image/font dependencies were added. Unused older captures remain on disk.
 
-Before publishing the Jungle Hunt privacy policy or using its URL in Play Console,
-review the actual release and Unity Dashboard data settings. The current Unity
-project enables runtime diagnostics; a disabled Analytics package alone does not
-prove that no data is collected. See `_templates/jungle-hunt-release-review.md`.
-The pages describe Jungle Hunt's own optional Google/Firebase and AdMob code.
-AdMob still uses test IDs; production ad serving and signed-device cloud backup
-need verification before release. Special arrows and upgrades use game coins;
-there is no Jungle Hunt real-money billing integration.
+The Jungle Hunt privacy and deletion text is matched to the signed Android 1.0
+build and the game's current code. It describes optional Google/Firebase cloud
+saves, automatic Analytics/Crashlytics, Unity engine diagnostics, AdMob test ads,
+support through Gmail and provider retention. The test-ad build has no Ad Privacy
+button, and disconnecting cloud backup does not disable telemetry. No fixed
+support-deletion deadline or Analytics retention setting was invented.
+The public pages contain no draft placeholders. Hosting/public URLs, the in-app
+policy link, signed-device cloud operations and production ad settings remain
+separate release tasks; see `_templates/jungle-hunt-release-review.md`.
 
 Local browser verification covers the five affected routes at 320, 390, 768 and
 1440 pixels, image loading, local links and anchors, FAQ keyboard behavior and the

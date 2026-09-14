@@ -52,14 +52,21 @@ Source project: `F:/games/My project`, Unity 6000.5.5f1.
   answers. Update the website text if the build configuration changes.
 - Review the support-retention and privacy-request wording against the studio's
   actual practices. No fixed child age group or regulatory rating was invented.
-- The game needs a visible link or policy text in its own Settings before using
-  this as its final in-app/Play privacy information. Firebase code and native Java
-  compilation and local rules tests pass; a signed device build and console
-  delivery/configuration verification remain outstanding. No APK was rebuilt.
+- The game needs a visible link or policy text in its own Settings. A signed
+  Jungle Hunt 1.0 AAB now exists and its package, signature and bundle checks pass.
+  Its standard AD_ID permission is absent, but Android advertising-service
+  permissions remain; do not equate that with no SDK identifiers or data collection.
+  Android device tests and remote console settings remain separate release checks.
+- The privacy/deletion content was updated from the current code and public
+  provider documentation. It describes automatic telemetry for guests, test-ad
+  behavior, Gmail support, active account deletion, provider cleanup and local data.
+  No fixed email-deletion deadline or Analytics retention setting was assumed.
+  Browser evidence is under `F:/games/My project/Artifacts/Privacy-Update/`.
 
 ## Deployment
 
 Deploy the existing static site normally when ready. Intended clean paths are
-`/games/jungle-hunt`, `/privacy/jungle-hunt` and `/data-deletion#jungle-hunt`.
+`/games/jungle-hunt`, `/privacy/jungle-hunt` and `/jungle-hunt-data-deletion`.
+The existing `/data-deletion#jungle-hunt` route carries the same instructions.
 After a real domain is known, use the resulting absolute URLs for Play Console
 and the game's policy entry. No publishing action was performed by this task.

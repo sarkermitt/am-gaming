@@ -11,60 +11,65 @@
 <body>
 <header class="nav"><div class="wrap"><a class="brand" href="/" aria-label="AM-Games home"><span class="logo" aria-hidden="true">🎮</span><span class="long">AM-Games</span></a><nav aria-label="Main navigation"><a href="/#games">Games</a><a href="/games/jungle-hunt">Jungle Hunt</a><a href="/contact">Support</a></nav></div></header>
 <main>
-<section style="padding-top:48px">
-  <div class="wrap prose">
-    <h1>Privacy Policy</h1>
-    <p class="updated">For <strong>Jungle Hunt</strong> · Last updated: September 14, 2026</p>
-    <p>This policy explains how <strong>AM-Games</strong> handles information in connection with the Jungle Hunt mobile game. Contact us at <a href="mailto:sarkermit.apps@gmail.com">sarkermit.apps@gmail.com</a> with privacy questions or requests.</p>
+<section style="padding-top:48px"><div class="wrap prose legal-content">
+<h1>Jungle Hunt Privacy Policy</h1>
+<p class="updated">AM-Games · Last updated: September 14, 2026</p>
+<p><strong>AM-Games</strong> provides Jungle Hunt, the Android game identified as <strong>com.amgames.junglehunt</strong>. This policy explains the information handled by the game and its connected services. For privacy questions or requests, email <a href="mailto:sarkermit.apps@gmail.com">sarkermit.apps@gmail.com</a>.</p>
+<p>You can play without a Google account. Signing in enables cloud backup. Analytics, crash reporting and advertising services can operate without sign-in when your device is online.</p>
+<p><a href="/jungle-hunt-data-deletion">Delete your Jungle Hunt account or request data deletion</a> · <a href="#retention">Retention</a> · <a href="#choices">Your choices</a></p>
 
-    <h2>Game progress on your device</h2>
-    <p>Jungle Hunt does not require an account or sign-in. The game stores your chapter progress, stars, coins, equipment upgrades, arrow inventory, selected arrow, best results and preferences locally on your device. These records let you continue where you left off.</p>
-    <p>Gameplay works without an internet connection. Optional Google sign-in lets you back up and restore progress across Android devices. There is no chat or user-upload feature.</p>
+<h2 id="progress">Progress saved on your device</h2>
+<p>The game saves chapter progress, stars, coins, best shot counts and completion times, equipment upgrades, special-arrow quantities, your selected arrow, tutorial completion and music, sound, aim-assist and motion preferences. This information lets you continue your game. Local saving and gameplay work offline.</p>
 
-    <h2>Google sign-in and cloud saves</h2>
-    <p>If you choose to sign in with Google, Google and Firebase Authentication process the sign-in and account identifiers. Firebase may receive the basic profile information associated with your Google sign-in, such as your name and email address. AM-Games uses the Firebase account identifier to store your game progress and preferences in Cloud Firestore. Cloud backup requires an internet connection.</p>
-    <p>The game does not receive your Google password. From Camp, use the user icon in the top-right corner beside Settings to open Google / Cloud Save. You can disconnect cloud backup or delete your Jungle Hunt cloud save and account there. This does not delete your Google account.</p>
-    <p>The cloud save includes chapter progress and best results, stars, coins, equipment upgrades, special-arrow counts, the equipped arrow, tutorial progress and preferences. If cloud and device saves conflict, the game asks which save to keep. It does not combine currency or ammunition from different saves.</p>
+<h2 id="account">Optional Google sign-in and cloud backup</h2>
+<p>If you sign in, Google and Firebase Authentication process your Google sign-in credentials and basic account information, including an account identifier, email address and any name or profile-photo information supplied by Google. Jungle Hunt does not receive your Google password.</p>
+<p>Cloud Firestore stores your game progress and preferences against your Firebase user ID, with save-version and update information. We use this to back up, synchronize and restore your journey. Your save is not a public profile or leaderboard. Signing in again can create a new game account after deletion and upload progress still saved on your device.</p>
+<p>From Camp, tap the <strong>user icon at the top right, beside Settings</strong>, to open <strong>Google / Cloud Save</strong>. You can connect, synchronize, disconnect or delete the cloud account. If device and cloud saves conflict, the game asks which to keep.</p>
 
-    <h2>Firebase Analytics and Crashlytics</h2>
-    <p>Firebase Analytics processes gameplay events, such as chapter starts and results, tutorial completion and purchases made with game coins, along with app and device identifiers and technical information. Firebase Crashlytics processes crash reports, exceptions, app and device information and diagnostic identifiers to help us investigate reliability problems. Our custom events do not include your name, email address or sign-in tokens. Android advertising-ID collection and advertising-personalization signals are disabled in the game configuration.</p>
-    <p>Google provides these Firebase services. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy and security information</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> for the provider's data practices.</p>
+<h2 id="analytics">Gameplay analytics and crash reports</h2>
+<p>Firebase Analytics records events such as chapter starts and results, stars earned, shots used, completion time, tutorial completion, Google sign-in and arrow or upgrade purchases made with game coins. These events help us understand gameplay and improve the game.</p>
+<p>Firebase Crashlytics receives crash reports and diagnostic context, including game version and chapter. The services also process app or installation identifiers and device information. Our custom event parameters do not contain your name, email address or sign-in tokens, and our code does not assign your Firebase account ID as an Analytics or Crashlytics user ID.</p>
+<p>Analytics and crash collection are enabled. The current game has no separate switch to turn them off. Disconnecting cloud backup does not disable these services. Firebase advertising-ID collection and advertising-personalization signals are disabled in the game configuration. See <a href="https://firebase.google.com/support/privacy">Firebase privacy and security information</a>.</p>
 
-    <h2>Technical diagnostics and Unity</h2>
-    <p>Jungle Hunt is built with Unity. Unity runtime diagnostics are enabled in the current project configuration. Depending on the runtime and service configuration, Unity can receive technical diagnostic information such as crash logs, telemetry and configuration metadata to support performance, compatibility and reliability.</p>
-    <p>The types of data processed and their handling depend on Unity's enabled services and settings. This policy therefore does not represent Jungle Hunt as an app that never transmits technical data. See <a href="https://docs.unity.com/en-us/cloud/developer-data/collection-settings" target="_blank" rel="noopener">Unity's data collection information</a> and <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">Unity's Game Player and App User Privacy Policy</a> for its practices and available privacy choices.</p>
+<h2 id="unity">Unity technical diagnostics</h2>
+<p>Jungle Hunt uses the Unity engine with engine diagnostics enabled. Unity can process technical information about the app, device, performance and errors for engine reliability and compatibility. This is separate from the game's Firebase gameplay events. See <a href="https://docs.unity.com/en-us/cloud/developer-data/collection-settings">Unity's collection settings</a> and <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity's Game Player and App User Privacy Policy</a> for its handling of this information and available rights.</p>
 
-    <h2>Advertising and purchases</h2>
-    <p>Jungle Hunt uses Google AdMob for full-screen ads between level attempts, after a win or loss. An ad appears only when one is available; gameplay can continue if it cannot load. Viewing an ad does not award game items. Special arrows and equipment use coins earned through play; there are no real-money in-app purchases or requests for payment-card details.</p>
-    <p>Google's advertising SDK can process IP addresses, approximate location inferred from IP, ad interactions, app/device identifiers and diagnostic information for advertising, measurement and fraud prevention. We request non-personalized ads and disable Android advertising-ID collection; this does not disable all advertising data processing. Where required, Google's consent message lets you make privacy choices, and Settings provides an Ad Privacy option to revisit them. See <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener">Google's SDK data disclosure</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+<h2 id="advertising">Advertising and game coins</h2>
+<p>Google AdMob can show a full-screen ad after a level attempt ends in a win or loss. Ads do not give a gameplay reward. The current Android version uses Google's test ad placements. Arrows and upgrades use game coins; Jungle Hunt has no real-money purchases, subscriptions or payment-card collection.</p>
+<p>Google's advertising SDK processes IP addresses, approximate location inferred from IP, ad interactions, app/device or platform identifiers and diagnostics for ads, analytics and fraud prevention. Requests specify non-personalized ads. The standard Android Advertising ID permission is excluded from this build; other SDK and Android advertising-service data can still be processed. See <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google's advertising SDK disclosure</a> and <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+<p>The test-ad version does not display an <strong>Ad Privacy</strong> option. In a version using live ads, the game's Google consent flow and Settings &gt; Ad Privacy apply when Google requires them. Ad choices do not turn off Firebase analytics or crash reporting.</p>
 
-    <h2>When you contact support</h2>
-    <p>If you email us, we receive your email address, your message and any information or attachments you choose to provide. We use that information to respond, investigate reported problems and handle your request. Email is processed through our email service provider. Please avoid sending passwords, payment information or other information that is not needed for support.</p>
+<h2 id="support">Support messages and service providers</h2>
+<p>When you contact <a href="mailto:sarkermit.apps@gmail.com">sarkermit.apps@gmail.com</a>, we receive your email address, message and any attachments you send. We use them to answer questions, investigate problems, verify account ownership and handle privacy requests. Our support email is handled through Google's Gmail service. Send only information needed for your request; never send passwords, authentication codes or sign-in tokens.</p>
+<p>Information is processed by Google/Firebase for sign-in, cloud storage, analytics, crash reporting, advertising and support email, and by Unity for engine diagnostics. Service providers may process information in countries other than yours. Their linked privacy policies explain their handling and international-transfer safeguards. We do not sell your personal information.</p>
 
-    <h2>Retention and deletion</h2>
-    <p>Your local game progress remains on your device until it is cleared. Android backup and restore settings may affect whether that progress is restored. Clearing game storage does not remove support correspondence or diagnostic records that have already been transmitted.</p>
-    <p>Cloud progress remains associated with your Jungle Hunt account until you delete it. From Camp, tap the top-right user icon beside Settings, then choose Delete Cloud Account on the Google / Cloud Save screen. Tap Confirm Delete and verify with the same Google account. The game deletes your Firestore save and Firebase Authentication account; it keeps your local progress. Disconnecting, clearing app storage or uninstalling alone does not delete cloud data. Deleting your cloud account does not immediately erase previously transmitted analytics or crash records, whose handling follows the service settings and provider practices.</p>
-    <p>To request deletion of support information or ask about diagnostic records, contact <a href="mailto:sarkermit.apps@gmail.com?subject=Jungle%20Hunt%20privacy%20request">sarkermit.apps@gmail.com</a>. Identify the information involved so that we can locate it and respond. Some records may need to be retained to meet legal obligations or resolve an ongoing issue. Unity's handling and retention of information are described in its linked privacy policy.</p>
+<h2 id="security">Security and information the game does not request</h2>
+<p>Firebase and Google Mobile Ads use encrypted connections for network data. Cloud-save requests use your authenticated game account. No online service or storage method can guarantee absolute security.</p>
+<p>Jungle Hunt does not ask to access your contacts, camera, microphone, SMS or precise GPS location. It has no chat or player-upload feature. Approximate location can still be inferred by advertising services from your internet connection. Google sign-in uses Google's own account-verification interface; the game does not receive fingerprint or other biometric information.</p>
 
-    <h2>Your choices</h2>
-    <ul>
-      <li>Play without creating an account.</li>
-      <li>Use optional Google sign-in for cloud backup, disconnect it, or delete your Jungle Hunt cloud account through the top-right user icon in Camp.</li>
-      <li>Where an Ad Privacy option is available in Settings, use it to revisit advertising privacy choices.</li>
-      <li>Change music, sound effects, aiming assistance and motion options in the game's Settings.</li>
-      <li>Use Android's app storage controls to clear local progress and preferences. See <a href="/data-deletion#jungle-hunt">Jungle Hunt data-deletion instructions</a>.</li>
-      <li>Contact us with a privacy request or use the privacy options described by Unity for information it handles.</li>
-    </ul>
+<h2 id="retention">How long information is kept</h2>
+<ul>
+  <li><strong>Device progress:</strong> kept until you clear the game's storage. Android backup and restore settings can cause saved data to return later.</li>
+  <li><strong>Cloud save and game account:</strong> kept until account deletion is completed. Successful in-app deletion removes the active Firestore save and Firebase Authentication account while keeping device progress.</li>
+  <li><strong>Provider retention:</strong> Firebase says authentication data is removed from its live and backup systems within 180 days after deletion is initiated. Crashlytics keeps crash information and associated identifiers for 90 days before starting removal. These provider periods are separate from removing the active game account. <a href="https://firebase.google.com/support/privacy">Firebase retention details</a>.</li>
+  <li><strong>Other analytics, advertising and Unity records:</strong> handled under the providers' retention policies and service settings. The cloud-account button does not erase these records. Contact us about identifiable data you want removed; we will assess the records we can locate and the relevant provider deletion options.</li>
+  <li><strong>Support correspondence:</strong> retained while needed to handle your request and related follow-up. You can request deletion of your messages and attachments. If a specific legal obligation prevents deletion of a record, we will explain the reason and applicable retention period.</li>
+</ul>
 
-    <h2>Parents and guardians</h2>
-    <p>Jungle Hunt contains stylized fantasy combat with arrows, bombs and fire effects. If you are a parent or guardian with a concern about information provided by a child, contact us so we can investigate and address the request.</p>
+<h2 id="choices">Your privacy choices and deletion</h2>
+<p>Use the Camp user icon to disconnect cloud backup or choose <strong>Delete Cloud Account</strong>, then <strong>Confirm Delete</strong> and verify with the same Google account. Cloud-account deletion does not delete your Google account, local progress or previously sent telemetry. Signing out, clearing local storage and uninstalling do not by themselves delete cloud data.</p>
+<p>You can also request account deletion without installing or opening the game by emailing <a href="mailto:sarkermit.apps@gmail.com?subject=Jungle%20Hunt%20account%20and%20data%20deletion%20request">sarkermit.apps@gmail.com</a>. See the <a href="/jungle-hunt-data-deletion">account and data-deletion page</a> for the steps, information to include and what is removed.</p>
+<p>Depending on the laws that apply to you, you may request access, correction, a copy or deletion of your personal information, or object to or restrict certain processing. Email us to make a request. We may need to verify ownership before providing or deleting account information. We will explain any limits that apply to your request.</p>
 
-    <h2>Updates and contact</h2>
-    <p>We will update this page when the game's data practices change and revise the date above. For questions about this policy, email <a href="mailto:sarkermit.apps@gmail.com">sarkermit.apps@gmail.com</a>.</p>
-  </div>
-</section>
+<h2 id="children">Parents and guardians</h2>
+<p>If you believe a child has provided personal information through Jungle Hunt or a support message, contact us at <a href="mailto:sarkermit.apps@gmail.com">sarkermit.apps@gmail.com</a>. We will investigate and address the request, including deletion where appropriate. Google account access is also subject to Google's account requirements.</p>
+
+<h2 id="updates">Policy updates</h2>
+<p>We will revise this page and its date when the game's data practices change. Privacy and data-deletion contact: <strong>AM-Games</strong>, <a href="mailto:sarkermit.apps@gmail.com">sarkermit.apps@gmail.com</a>.</p>
+
+</div></section>
 </main>
-<footer class="foot"><div class="wrap"><div>© <span id="yr"></span> AM-Games. All rights reserved.</div><div class="links"><a href="/games/jungle-hunt">Jungle Hunt</a><a href="/contact">Support</a><a href="/data-deletion#jungle-hunt">Data deletion</a></div></div></footer>
+<footer class="foot"><div class="wrap"><div>© <span id="yr"></span> AM-Games. All rights reserved.</div><div class="links"><a href="/games/jungle-hunt">Jungle Hunt</a><a href="/contact">Support</a><a href="/jungle-hunt-data-deletion">Data deletion</a></div></div></footer>
 <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>
