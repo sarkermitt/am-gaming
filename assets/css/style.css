@@ -81,7 +81,7 @@ section { padding: 56px 0; }
 .section-head p { color: var(--muted); margin-top: 8px; }
 
 /* ---- Games grid ---- */
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 22px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 22px; }
 .game-card {
   background: linear-gradient(180deg, var(--card), var(--card-2));
   border: 1px solid var(--line); border-radius: var(--radius);

@@ -1,0 +1,50 @@
+/* Jungle Hunt content, using the studio site's existing components. */
+.jungle-page { --bg: #07191f; --bg-2: #10282e; --card: #142e34; --card-2: #17383c; --line: #2b484b; --text: #f2f0de; --muted: #adc3c4; --brand: #8ed9b1; --brand-2: #6eb5d6; --gold: #e9bd75; }
+.jungle-page .hero::before { background: radial-gradient(60% 70% at 85% 10%, #153e6040, transparent 70%), radial-gradient(60% 70% at 10% 20%, #34896430, transparent 70%); }
+.jungle-page .hero { padding-bottom: 20px; }
+.jungle-page header.nav { background: #07191feb; }
+.jungle-page .btn-play { background: var(--gold); box-shadow: none; }
+.jungle-page .btn-ghost { border-color: #688d8f; }
+.jungle-page .section-head .eyebrow { color: var(--brand); margin-bottom: 6px; }
+.jungle-page .feature h3 { font-size: 18px; margin-bottom: 8px; }
+.jungle-page .feature p { font-size: 15px; }
+.jungle-page :is(a, summary):focus-visible { outline: 3px solid var(--gold); outline-offset: 5px; border-radius: 5px; }
+.jungle-page section[id] { scroll-margin-top: 84px; }
+.jungle-page .skip-link { position: fixed; top: -100px; left: 16px; z-index: 100; background: var(--gold); color: #07191f; padding: 12px 18px; border-radius: 8px; }
+.jungle-page .skip-link:focus { top: 12px; }
+.jungle-key-art .feature-img { width: 100%; height: auto; }
+.jungle-stats { display: grid; grid-template-columns: repeat(4, 1fr); padding: 14px 0; border-block: 1px solid var(--line); gap: 16px; }
+.jungle-stats div { display: flex; flex-direction: column-reverse; text-align: center; }
+.jungle-stats dd { color: var(--gold); font-size: 36px; font-weight: 800; }
+.jungle-stats dt { font-size: 14px; color: var(--muted); }
+.jungle-intro { color: var(--muted); max-width: 840px; font-size: 18px; margin-bottom: 30px; }
+.jungle-band { background: #0d2429; border-block: 1px solid var(--line); }
+.jungle-arrows { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.jungle-arrows .feature { border-top: 3px solid var(--arrow); }
+.arrow-classic { --arrow: #8bdc91; } .arrow-ice { --arrow: #89d9f5; } .arrow-red { --arrow: #ff9c9e; } .arrow-fire { --arrow: #ffbc77; }
+.jungle-kicker { color: var(--arrow); font-size: 12px; font-weight: 700; display: block; margin-bottom: 10px; letter-spacing: .04em; text-transform: uppercase; }
+.jungle-note { color: var(--muted); margin-top: 24px; max-width: 840px; }
+.jungle-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.jungle-gallery figure { background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.jungle-gallery img { width: 100%; height: auto; aspect-ratio: 16 / 9; }
+.jungle-gallery a { display: block; }
+.jungle-gallery figcaption { padding: 13px 16px; color: var(--muted); font-size: 14px; }
+.jungle-steps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 46px; padding-left: 24px; }
+.jungle-steps li { padding-left: 8px; }
+.jungle-steps li::marker { color: var(--gold); font-weight: 800; }
+.jungle-steps h3 { font-size: 18px; margin-bottom: 7px; }
+.jungle-steps p { color: var(--muted); }
+.jungle-details-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 52px; }
+.jungle-facts div { display: grid; grid-template-columns: 112px 1fr; gap: 12px; padding: 13px 0; border-bottom: 1px solid var(--line); }
+.jungle-facts dt { color: var(--muted); } .jungle-facts dd { overflow-wrap: anywhere; }
+.jungle-faq details { border-bottom: 1px solid var(--line); padding: 15px 0; }
+.jungle-faq summary { cursor: pointer; font-weight: 700; padding-right: 12px; }
+.jungle-faq details p { margin-top: 12px; color: var(--muted); }
+.jungle-support { padding-top: 0; }
+.jungle-support .callout { margin: 0; }
+.jungle-support h2 { font-size: clamp(24px, 4vw, 32px); margin: 8px 0; }
+.jungle-support .callout > p:not(.eyebrow) { color: var(--muted); }
+.jungle-support .btn-row { margin-top: 22px; }
+@media (max-width: 720px) { .jungle-details-grid { grid-template-columns: 1fr; gap: 36px; } .jungle-gallery { gap: 18px; } }
+@media (max-width: 540px) { .jungle-page .hero { padding-top: 36px; } .jungle-page .game-hero { grid-template-columns: 1fr; gap: 20px; } .jungle-page .game-hero .big-icon { width: 104px; height: 104px; } .jungle-stats { grid-template-columns: repeat(2, 1fr); gap: 20px; } .jungle-arrows, .jungle-gallery, .jungle-steps { grid-template-columns: 1fr; } .jungle-facts div { grid-template-columns: 96px 1fr; } .jungle-page .callout { padding: 20px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .jungle-page .btn { transition: none; } .jungle-page .btn:hover { transform: none; } }

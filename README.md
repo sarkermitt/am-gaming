@@ -3,6 +3,42 @@
 A **static** multi-game site (studio landing page + one page per game + a privacy
 policy per game). No build step, no backend — just HTML/CSS. Perfect for Vercel.
 
+## Jungle Hunt added — September 14, 2026
+
+- `/games/jungle-hunt` — complete game page: description, 20 chapters, 54 creatures,
+  four arrow types, eight actual game screenshots, controls, progression, Android
+  requirements, settings, FAQ and studio support.
+- `/privacy/jungle-hunt` — game-specific privacy text covering local saves,
+  support correspondence and Unity runtime diagnostics.
+- `/data-deletion#jungle-hunt` — local data clearing and privacy-request instructions.
+- The homepage and Contact page link to Jungle Hunt alongside Math Puzzle IQ.
+
+Jungle Hunt uses the existing **AM GAMING** identity and
+**sarkermit.play@gmail.com** support contact. Its Google Play URL has not been
+provided or verified, so the game page currently links to gameplay and controls
+without an install button or an unverified store-availability claim. Add the real
+store link to its hero CTA when available.
+
+Artwork comes from `F:/games/My project/Play console assets/06-source-art/`.
+The icon and feature illustration retain their original 1254×1254 and 1794×876
+PNG bytes; these website sources are not exact-size Play Console exports.
+Eight 1920×1080 screenshots are under `assets/img/jungle-hunt/`, loaded lazily.
+They depict the actual shared game in Unity Editor Play Mode. No generated fake
+gameplay images or external image/font dependencies were added.
+
+Before publishing the Jungle Hunt privacy policy or using its URL in Play Console,
+review the actual release and Unity Dashboard data settings. The current Unity
+project enables runtime diagnostics; a disabled Analytics package alone does not
+prove that no data is collected. See `_templates/jungle-hunt-release-review.md`.
+The page does not copy Math Puzzle IQ's Firebase, Ads or real-money billing claims.
+
+Local browser verification covers the five affected routes at 320, 390, 768 and
+1440 pixels, image loading, local links and anchors, FAQ keyboard behavior and the
+homepage card. Evidence is stored at
+`F:/games/My project/Artifacts/Jungle-Hunt-Website/`. No Git push or deployment was
+performed for this addition. The user's existing Math Puzzle IQ store-link edit
+was preserved.
+
 ```
 website/
 ├─ index.html                      ← homepage (studio + games grid)
