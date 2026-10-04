@@ -1,0 +1,39 @@
+# Local deployment metadata, dependencies and generated output.
+/.vercel/
+/.cache/
+/node_modules/
+/dist/
+/build/
+/out/
+/coverage/
+/playwright-report/
+/test-results/
+
+# Local configuration and private credentials.
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+service-account.json
+serviceAccountKey.json
+*firebase-adminsdk*.json
+
+# Editor, log and operating-system files.
+/.vscode/
+/.idea/
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+*.log
+*.tmp
+*.temp
+*~
+*.swp
+*.swo
