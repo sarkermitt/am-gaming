@@ -3,6 +3,40 @@
 A **static** multi-game site (studio landing page + one page per game + a privacy
 policy per game). No build step, no backend — just HTML/CSS. Perfect for Vercel.
 
+## Zombie City added — October 8, 2026
+
+- `/games/zombie-city` — 20 levels across Cedar Crossing and Nightfall District,
+  six weapons, upgrades, rewards, controls, Google backup and six real screenshots.
+- `/privacy/zombie-city` — local/cloud data, Google profile photos, AdMob rewarded
+  ads and consent options, Unity engine diagnostics, support and privacy choices.
+- `/support/zombie-city` — gameplay, ads, Google sign-in, backup and device help.
+- `/terms/zombie-city` — game use, virtual currency, ads, saves and support terms.
+- `/zombie-city-data-deletion` — email account/cloud deletion requests and local
+  storage instructions; also linked from `/data-deletion#zombie-city`.
+- The studio homepage and contact page include Zombie City and its policy links.
+
+The icon and feature graphic include the approved blood splatter. Both and all
+six screenshots were copied unchanged from `F:/games/Zombie city/play console asset`.
+Screenshots were refreshed on October 8, 2026; the gameplay image shows the real
+mission countdown. New pages reuse the site's components with a scoped yellow,
+red and charcoal theme. No new runtime dependencies, external fonts or trackers.
+
+No verified public Play listing URL was supplied, so the game page uses gameplay
+and help links rather than claiming store availability. Existing game links are
+preserved. No push or deployment is part of this local website update.
+
+Zombie City's current Android code supports Google sign-in, backup, conflict
+choice and sign-out, but **does not have in-app account deletion**. The web page
+honestly offers a manual email request. Its existence does not implement backend
+deletion or complete Google's in-app deletion requirement. Release notes and
+the code/source evidence are in `_templates/zombie-city-release-review.txt`.
+
+Verification passed for all eight affected pages at 320, 390, 768 and 1440px
+(32 responsive checks): no overflow, missing images, broken local links/anchors
+or JavaScript errors. Homepage navigation, keyboard FAQ controls and the composed
+deletion email also passed. Evidence and the rerunnable local browser checker are
+in `F:/games/Zombie city/Documentation/Website/`.
+
 ## Jungle Hunt updated — September 14, 2026
 
 - `/games/jungle-hunt` — description, all 20 regions and their 200 chapters,
@@ -18,7 +52,7 @@ policy per game). No build step, no backend — just HTML/CSS. Perfect for Verce
 - The homepage and Contact page link to Jungle Hunt alongside Math Puzzle IQ.
 
 Jungle Hunt uses the existing **AM-Games** identity and
-**sarkermit.apps@gmail.com** support contact. Its Google Play URL has not been
+**amgames.developer@gmail.com** support contact. Its Google Play URL has not been
 provided or verified, so the game page currently links to gameplay and controls
 without an install button or an unverified store-availability claim. Add the real
 store link to its hero CTA when available.
@@ -114,7 +148,7 @@ Redeploy (push to Git, or re-run `vercel --prod`).
 
 ## Editing the studio brand
 The studio name **"AM-Games"**, the 🎮 logo, and the contact email
-`sarkermit.apps@gmail.com` appear across the pages — search & replace to change them.
+`amgames.developer@gmail.com` appear across the pages — search & replace to change them.
 Colors live at the top of `assets/css/style.css` (`:root` variables).
 
 ## Note on the privacy policy

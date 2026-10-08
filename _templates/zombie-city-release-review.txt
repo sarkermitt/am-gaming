@@ -1,0 +1,49 @@
+ZOMBIE CITY WEBSITE — OCTOBER 8, 2026
+
+LOCAL IMPLEMENTATION
+Five linked pages: game, privacy, terms, support and data deletion.
+Shared homepage, contact and data-deletion directory updated.
+Package: com.amgames.zombiecity. Studio: AM-Games.
+Support uses the studio's existing amgames.developer@gmail.com address.
+No new live deployment or Google Play availability claim.
+
+CODE EVIDENCE (F:/games/Zombie city)
+Assets/ZombieCity/Scripts/CityCampaign.cs: two cities, ten levels each, order and locks.
+Assets/ZombieCity/Scripts/WeaponLoadout.cs: six weapon types.
+Assets/ZombieCity/Scripts/CityGunUpgrades.cs: five ranks, damage/recoil and RPG radius.
+Assets/ZombieCity/Scripts/CityDailyReward.cs: 200 money, optional 3x ad reward.
+Assets/ZombieCity/Scripts/CityProgressSnapshot.cs: exact cloud fields; preferences excluded.
+Assets/ZombieCity/Scripts/CityHudAccount.cs: User entry and real button labels.
+Assets/ZombieCity/Scripts/CityCloudSync.cs and Assets/Plugins/Android/CityFirebaseBridge.java:
+  Firebase Authentication/Firestore read, write and sign-out; no deletion action.
+Assets/ZombieCity/Scripts/CityProfilePhoto.cs: Google profile photo download/cache.
+Assets/ZombieCity/Scripts/CityAdMobRewards.cs: opt-in rewarded ads, preloading, UMP consent.
+Assets/ZombieCity/Scripts/CityHudSettings.cs: conditional Ad Privacy entry.
+Assets/Resources/CityAdMobSettings.json: Google's test rewarded-ad unit IDs currently.
+Assets/Plugins/Android/mainTemplate.gradle: Firebase Auth/Firestore; no Analytics/Crashlytics.
+ProjectSettings/UnityConnectSettings.asset: engine diagnostics enabled, Unity Analytics off.
+ProjectSettings/ProjectSettings.asset: Android API 26 minimum, ARM64 target.
+
+DELETION OPERATIONS AND RELEASE FOLLOW-UP
+The email button opens a composed request; it does not send email or delete data.
+Handle verified requests by deleting the player's Firestore save at
+players/{uid}/saves/progress and the associated Firebase Authentication account.
+Deleting a parent Firestore document does not recursively delete subcollections.
+Check for any other identifiable records included in the request, confirm completion
+and explain any actual retention requirement. No deletion deadline was invented.
+Signing in again after deletion can create a new account and upload local progress.
+
+Google Play requires an in-app deletion path as well as a web resource for apps
+with account creation. Add and verify that app-side flow separately before claiming
+that requirement is complete. The website describes email deletion accurately.
+Final live ad configuration and Data safety answers must match the released build.
+Add the verified Play URL and production website origin when available. Review the
+published policy/terms and operational support handling before release.
+
+PRIMARY REFERENCES CHECKED
+https://support.google.com/googleplay/android-developer/answer/13327111
+https://developers.google.com/admob/unity/privacy/play-data-disclosure
+https://firebase.google.com/support/privacy
+https://unity.com/legal/game-player-and-app-user-privacy-policy
+
+Browser verification evidence: F:/games/Zombie city/Documentation/Website/
